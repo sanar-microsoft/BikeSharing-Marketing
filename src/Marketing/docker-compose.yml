@@ -7,4 +7,4 @@ services:
       context: ./${DOCKER_PUBLISH_OUTPUT}
       dockerfile: Dockerfile
     ports:
-      - "80"
+      - "8080"
