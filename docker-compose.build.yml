@@ -8,4 +8,4 @@ services:
     volumes:
       - .:/src
     working_dir: /src
-    command: /bin/bash -c "dotnet restore3 && dotnet publish3 -c release -o bin/release/publishoutput"
+    command: /bin/bash -c "dotnet restore3 && dotnet publish3 -c release -o ~/bin/release/publishoutput"
