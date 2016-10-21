@@ -1,11 +1,8 @@
 version: '2'
 services:
   build:
-    build:
-        dockerfile: ./build/Dockerfile
-        context: .
-    image: microsoft/dotnetbuildimage
+    image: stevelasker/dotnet-build:msbuild
     volumes:
-      - .:/src
-    working_dir: /src
-    command: /bin/bash -c "dotnet restore3 && dotnet publish3 -c release -o ~/bin/release/publishoutput"
+      - .:/sln
+    working_dir: /sln
+    entrypoint: ["sh", "./build.sh"]
