@@ -1,5 +1,5 @@
 FROM microsoft/aspnetcore:1.0.1
-ARG source=bin/Release/publishoutput
+ARG source=bin/Release/PublishOutput
 WORKDIR /app
 EXPOSE 8080
 ENV ASPNETCORE_URLS http://+:8080
