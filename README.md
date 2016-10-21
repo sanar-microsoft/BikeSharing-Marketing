@@ -1,4 +1,4 @@
-# BikeSharting-Marketing
+# BikeSharing-Marketing
 
 # Building the project in a container
 
