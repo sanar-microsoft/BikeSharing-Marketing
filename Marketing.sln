@@ -7,6 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F6D0709-C72
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marketing", "src\Marketing\Marketing.csproj", "{9EE8D1C7-8E45-4C06-916A-23B79A4E03E9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7C1DE4FE-4D81-4363-8559-51A1369140BC}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.build.yml = docker-compose.build.yml
+		docker-compose.override.yml = docker-compose.override.yml
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +32,3 @@ Global
 		{9EE8D1C7-8E45-4C06-916A-23B79A4E03E9} = {4F6D0709-C72F-4DF2-8ED8-8A4B838D1C59}
 	EndGlobalSection
 EndGlobal
-
-
