@@ -2,4 +2,9 @@ version: '2'
 
 services:
   marketing:
+    build:
+      context: ./src/Marketing
+      dockerfile: Dockerfile
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
     image: bikesharing/marketing
