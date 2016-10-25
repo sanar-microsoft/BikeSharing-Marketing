@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  marketing:
+    image: bikesharing/marketing
+    build:
+      context: ./${DOCKER_PUBLISH_OUTPUT}
+      dockerfile: Dockerfile
+    ports:
+      - "8080"
