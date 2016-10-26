@@ -1,16 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.25818.0
+VisualStudioVersion = 15.0.25824.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F6D0709-C72F-4DF2-8ED8-8A4B838D1C59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marketing", "src\Marketing\Marketing.csproj", "{9EE8D1C7-8E45-4C06-916A-23B79A4E03E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marketing", "src\Marketing\Marketing.csproj", "{9EE8D1C7-8E45-4C06-916A-23B79A4E03E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7C1DE4FE-4D81-4363-8559-51A1369140BC}"
 	ProjectSection(SolutionItems) = preProject
-		docker-compose.build.yml = docker-compose.build.yml
+		docker-compose.ci.build.yml = docker-compose.ci.build.yml
 		docker-compose.override.yml = docker-compose.override.yml
+		docker-compose.vs.debug.yml = docker-compose.vs.debug.yml
+		docker-compose.vs.release.yml = docker-compose.vs.release.yml
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
