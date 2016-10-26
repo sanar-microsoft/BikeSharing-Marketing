@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  build:
+  ci-build:
     image: microsoft/aspnetcore-build:1.0.1
     volumes:
       - .:/src
