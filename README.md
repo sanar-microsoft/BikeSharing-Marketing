@@ -7,18 +7,12 @@ How this works:
 * when you call `docker-compose -f docker-compose.ci.build.yml up`, the image `microsoft/aspnetcore:1.0.1-sdk` is attempted to be instanced. 
 * The first time, `microsoft/aspnetcore:1.0.1-sdk` isn't available compose up will build the image using  `.\build\Dockerfile` 
 * The root of the solution is volume mapped in
-* `dotnet restore3`, `dotnet publish3 -c release` are executed
-* Note: *3 is a temporary dotnet command for msbuild. This will be changed in the next few days
+* `dotnet restore`, `dotnet publish -c release` are executed
 
 In the same folder as this readme.md file, call:
 ```
 docker-compose -f docker-compose.ci.build.yml up
 ```
-
-# Running the site
-
-This particular version of the sample runs on port 8080. This is a temporary workaround until app services resovles a design gap blocking lower range PORTS
-
 
 ## directly on your dev machine
 
