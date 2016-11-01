@@ -1,0 +1,6 @@
+C:\Users\msspeaker\Documents\GitHub\SteveLasker\BikeSharing-Marketing\src\BikeSharing-Marketing\bin\Debug\netcoreapp1.0\BikeSharing-Marketing.dll
+C:\Users\msspeaker\Documents\GitHub\SteveLasker\BikeSharing-Marketing\src\BikeSharing-Marketing\bin\Debug\netcoreapp1.0\BikeSharing-Marketing.pdb
+C:\Users\msspeaker\Documents\GitHub\SteveLasker\BikeSharing-Marketing\src\BikeSharing-Marketing\obj\Debug\netcoreapp1.0\BikeSharing-Marketing.csprojResolveAssemblyReference.cache
+C:\Users\msspeaker\Documents\GitHub\SteveLasker\BikeSharing-Marketing\src\BikeSharing-Marketing\obj\Debug\netcoreapp1.0\BikeSharing-Marketing.AssemblyInfo.cs
+C:\Users\msspeaker\Documents\GitHub\SteveLasker\BikeSharing-Marketing\src\BikeSharing-Marketing\obj\Debug\netcoreapp1.0\BikeSharing-Marketing.dll
+C:\Users\msspeaker\Documents\GitHub\SteveLasker\BikeSharing-Marketing\src\BikeSharing-Marketing\obj\Debug\netcoreapp1.0\BikeSharing-Marketing.pdb
