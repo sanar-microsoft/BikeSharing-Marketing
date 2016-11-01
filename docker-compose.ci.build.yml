@@ -2,9 +2,9 @@ version: '2'
 
 services:
   ci-build:
-    image: microsoft/aspnetcore-build-nightly:1.0.1-sdk-003933
+    build: docker/
     volumes:
       - .:/src
     working_dir: /src
-    # adding /p:SkipInvalidConfigurations=true until we get an updated SDK image 
+    # adding /p:SkipInvalidConfigurations=true until we get an updated SDK image
     command: /bin/bash -c "dotnet restore /p:SkipInvalidConfigurations=true && dotnet publish -c Release -o ./bin/Release/PublishOutput"
