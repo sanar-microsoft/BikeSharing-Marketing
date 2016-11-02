@@ -4,7 +4,9 @@ services:
   bikesharing-marketing:
     image: user/bikesharing-marketing
     build:
-      context: .
+      context: ./src/BikeSharing-Marketing
       dockerfile: Dockerfile
       args:
         source: ${DOCKER_BUILD_SOURCE}
+    expose:
+      - "80"
