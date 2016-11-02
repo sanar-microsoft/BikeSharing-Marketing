@@ -53,6 +53,7 @@ ENV DOTNET_SDK_VERSION 1.0.0-preview3-003933
 ENV DOTNET_SHAREDFX_VERSION 1.1.0
 ENV ASPNETCORE_URLS http://+:80
 ENV DOTNET_HOSTING_OPTIMIZATION_CACHE /packagescache
+ENV NUGET_XMLDOC_MODE Skip
 
 # Install .NET Core SDK
 RUN curl -SL https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$DOTNET_SDK_VERSION/dotnet-dev-debian-x64.$DOTNET_SDK_VERSION.tar.gz --output dotnet.tar.gz \
@@ -79,6 +80,8 @@ RUN curl -o /tmp/packagescache.tar.gz \
     dotnet nuget restore /tmp/warmup/packagescache.project.json && \
     dotnet nuget restore /tmp/warmup/nightly.project.json \
         --source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json && \
-    rm -rf /tmp/warmup
+    rm -rf /tmp/warmup && \
+	find ~/.nuget -name "*.nupkg" -type f -delete 
+
 
 WORKDIR /
