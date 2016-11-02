@@ -2,8 +2,12 @@ version: '2'
 
 services:
   ci-build:
-    image: microsoft/aspnetcore-build:1.1.0-msbuild
-    build: docker/
+    # using the nightly image from dockerhub
+    image: microsoft/aspnetcore-build-nightly:1.1.0-preview1-msbuild
+    # if that's failing, use a custom build where you can specify the various components
+    # using custom builds
+    #image: microsoft/aspnetcore-build:1.1.0-msbuild
+    #build: docker/
     volumes:
       - .:/src
     working_dir: /src
