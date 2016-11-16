@@ -29,5 +29,3 @@ Find the dynamically assigned port: `docker ps`
  bikesharing/marketing   0.0.0.0:32786->8080/tcp
 ```
 http://localhost:32767
-
-Adding this to trigger CI.
